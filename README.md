@@ -9,7 +9,53 @@ See [OCDS for the European Union](http://standard.open-contracting.org/profiles/
 ## Example
 
 ```json
-
+{
+  "tender": {
+    "amendments": [
+      {
+        "id": "1",
+        "unstructuredChanges": [
+          {
+            "oldValue": {
+              "text": "https://city.example.org/procurement"
+            },
+            "newValue": {
+              "text": "https://procurement.example.org"
+            },
+            "where": {
+              "section": "I.1",
+              "label": "Main address"
+            },
+            "relatedLot": "lot-2"
+          },
+          {
+            "oldValue": {
+              "classifications": [
+                {
+                  "scheme": "CPV",
+                  "id": "79000000"
+                }
+              ]
+            },
+            "newValue": {
+              "classifications": [
+                {
+                  "scheme": "CPV",
+                  "id": "79822500"
+                }
+              ]
+            },
+            "where": {
+              "section": "II.1.2",
+              "label": "Main CPV code"
+            },
+            "relatedLot": "lot-2"
+          }
+        ]
+      }
+    ]
+  }
+}
 ```
 
 ## Issues
