@@ -9,8 +9,7 @@
           "items": {
             "$ref": "#/definitions/UnstructuredChange"
           },
-          "wholeListMerge": true,
-          "uniqueItems": true
+          "wholeListMerge": true
         }
       }
     },
@@ -18,39 +17,32 @@
       "title": "Unstructured change",
       "description": "An unstructured change.",
       "type": [
-        "object",
-        "null"
+        "object"
       ],
       "properties": {
-        "relatedLots": {
-          "title": "Related lot(s)",
-          "description": "If this change relates to a particular lot, provide the identifier(s) of the related lot(s) here.",
+        "relatedLot": {
+          "title": "Related lot",
+          "description": "If this change relates to a particular lot, provide the identifier of the related lot here.",
           "type": [
-            "array",
+            "string",
             "null"
-          ],
-          "items": {
-            "type": [
-              "string"
-            ]
-          }
+          ]
         },
         "oldValue": {
           "title": "Old value",
           "description": "Value before the change",
-          "$ref": "#/definitions/UnstructuredChangeValue",
+          "$ref": "#/definitions/UnstructuredChangeValue"
         },
         "newValue": {
           "title": "New value",
           "description": "Value after the change",
-          "$ref": "#/definitions/UnstructuredChangeValue",
+          "$ref": "#/definitions/UnstructuredChangeValue"
         },
         "where": {
           "title": "Where",
           "description": "Location of the change",
           "type": [
-            "object",
-            "null"
+            "object"
           ],
           "properties": {
             "section": {
@@ -77,8 +69,7 @@
       "title": "Unstructured change value",
       "description": "Old or new unstructured change value",
       "type": [
-        "object",
-        "null"
+        "object"
       ],
       "properties": {
         "text": {
@@ -93,8 +84,7 @@
           "title": "Classifications",
           "description": "Classifications for an unstructured change",
           "type": [
-            "array",
-            "null"
+            "array"
           ],
           "items": {
             "$ref": "#/definitions/Classification"
@@ -110,7 +100,7 @@
             "null"
           ],
           "format": "date-time"
-         }
+        }
       }
     }
   }
