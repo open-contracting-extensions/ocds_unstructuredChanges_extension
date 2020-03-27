@@ -1,0 +1,117 @@
+{
+  "definitions": {
+    "Amendment": {
+      "properties": {
+        "unstructuredChanges": {
+          "title": "Unstructured changes",
+          "description": "A list of unstructured changes that apply to the procedure.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/UnstructuredChange"
+          },
+          "wholeListMerge": true,
+          "uniqueItems": true
+        }
+      }
+    },
+    "UnstructuredChange": {
+      "title": "Unstructured change",
+      "description": "An unstructured change.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "relatedLots": {
+          "title": "Related lot(s)",
+          "description": "If this change relates to a particular lot, provide the identifier(s) of the related lot(s) here.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "oldValue": {
+          "title": "Old value",
+          "description": "Value before the change",
+          "$ref": "#/definitions/UnstructuredChangeValue",
+        },
+        "newValue": {
+          "title": "New value",
+          "description": "Value after the change",
+          "$ref": "#/definitions/UnstructuredChangeValue",
+        },
+        "where": {
+          "title": "Where",
+          "description": "Location of the change",
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "section": {
+              "title": "Section",
+              "description": "The section of the changed field",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "label": {
+              "title": "Label",
+              "description": "The label of the changed field",
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "UnstructuredChangeValue": {
+      "title": "Unstructured change value",
+      "description": "Old or new unstructured change value",
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "text": {
+          "title": "Text value",
+          "description": "Text value for an unstructured change. Double quotes (\"\") if empty.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "classifications": {
+          "title": "Classifications",
+          "description": "Classifications for an unstructured change",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/Classification"
+          },
+          "wholeListMerge": true,
+          "uniqueItems": true
+        },
+        "date": {
+          "title": "Date",
+          "description": "Date value",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+         }
+      }
+    }
+  }
+}
