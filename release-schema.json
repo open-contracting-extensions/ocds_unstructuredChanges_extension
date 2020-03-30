@@ -29,22 +29,22 @@
         },
         "oldValue": {
           "title": "Old value",
-          "description": "Value before the change.",
+          "description": "The value of the data element referenced by the where field, before the change.",
           "$ref": "#/definitions/UnstructuredChangeValue"
         },
         "newValue": {
           "title": "New value",
-          "description": "Value after the change.",
+          "description": "The value of the data element referenced by the where field, after the change.",
           "$ref": "#/definitions/UnstructuredChangeValue"
         },
         "where": {
           "title": "Where",
-          "description": "Location of the change.",
+          "description": "A reference to a data element on an earlier notice that is being changed.",
           "type": "object",
           "properties": {
             "section": {
               "title": "Section",
-              "description": "The section of the changed field.",
+              "description": "The identifier of the section containing the data element, if the earlier notice is organized into sections.",
               "type": [
                 "string",
                 "null"
