@@ -25,8 +25,7 @@ See [OCDS for the European Union](http://standard.open-contracting.org/profiles/
             "where": {
               "section": "I.1",
               "label": "Main address"
-            },
-            "relatedLot": "lot-2"
+            }
           },
           {
             "oldValue": {
@@ -46,7 +45,7 @@ See [OCDS for the European Union](http://standard.open-contracting.org/profiles/
               ]
             },
             "where": {
-              "section": "II.1.2",
+              "section": "II.2.2",
               "label": "Main CPV code"
             },
             "relatedLot": "lot-2"
