@@ -29,12 +29,12 @@
         },
         "oldValue": {
           "title": "Old value",
-          "description": "The value of the data element referenced by the where field, before the change.",
+          "description": "The value of the data element referenced by the `where` field, before the change.",
           "$ref": "#/definitions/UnstructuredChangeValue"
         },
         "newValue": {
           "title": "New value",
-          "description": "The value of the data element referenced by the where field, after the change.",
+          "description": "The value of the data element referenced by the `where` field, after the change.",
           "$ref": "#/definitions/UnstructuredChangeValue"
         },
         "where": {
