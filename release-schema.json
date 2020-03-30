@@ -16,9 +16,7 @@
     "UnstructuredChange": {
       "title": "Unstructured change",
       "description": "Unstructured or semi-structured change to an earlier notice.",
-      "type": [
-        "object"
-      ],
+      "type": "object",
       "properties": {
         "relatedLot": {
           "title": "Related lot",
@@ -41,9 +39,7 @@
         "where": {
           "title": "Where",
           "description": "Location of the change.",
-          "type": [
-            "object"
-          ],
+          "type": "object",
           "properties": {
             "section": {
               "title": "Section",
@@ -68,9 +64,7 @@
     "UnstructuredChangeValue": {
       "title": "Unstructured change value",
       "description": "Old or new unstructured change value.",
-      "type": [
-        "object"
-      ],
+      "type": "object",
       "properties": {
         "text": {
           "title": "Text value",
