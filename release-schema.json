@@ -4,7 +4,7 @@
       "properties": {
         "unstructuredChanges": {
           "title": "Unstructured changes",
-          "description": "A list of unstructured changes that apply to the procedure.",
+          "description": "Unstructured or semi-structured changes to an earlier notice.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/UnstructuredChange"
@@ -15,14 +15,14 @@
     },
     "UnstructuredChange": {
       "title": "Unstructured change",
-      "description": "An unstructured change.",
+      "description": "Unstructured or semi-structured change to an earlier notice.",
       "type": [
         "object"
       ],
       "properties": {
         "relatedLot": {
           "title": "Related lot",
-          "description": "If this change relates to a particular lot, provide the identifier of the related lot here.",
+          "description": "The identifier of the lot to which this change relates, if any.",
           "type": [
             "string",
             "null"
@@ -30,24 +30,24 @@
         },
         "oldValue": {
           "title": "Old value",
-          "description": "Value before the change",
+          "description": "Value before the change.",
           "$ref": "#/definitions/UnstructuredChangeValue"
         },
         "newValue": {
           "title": "New value",
-          "description": "Value after the change",
+          "description": "Value after the change.",
           "$ref": "#/definitions/UnstructuredChangeValue"
         },
         "where": {
           "title": "Where",
-          "description": "Location of the change",
+          "description": "Location of the change.",
           "type": [
             "object"
           ],
           "properties": {
             "section": {
               "title": "Section",
-              "description": "The section of the changed field",
+              "description": "The section of the changed field.",
               "type": [
                 "string",
                 "null"
@@ -55,7 +55,7 @@
             },
             "label": {
               "title": "Label",
-              "description": "The label of the changed field",
+              "description": "The label for the data element.",
               "type": [
                 "string",
                 "null"
@@ -67,14 +67,14 @@
     },
     "UnstructuredChangeValue": {
       "title": "Unstructured change value",
-      "description": "Old or new unstructured change value",
+      "description": "Old or new unstructured change value.",
       "type": [
         "object"
       ],
       "properties": {
         "text": {
           "title": "Text value",
-          "description": "Text value for an unstructured change. Double quotes (\"\") if empty.",
+          "description": "A text. If the change deleted or erased the data element, use the empty string (\"\").",
           "type": [
             "string",
             "null"
@@ -82,7 +82,7 @@
         },
         "classifications": {
           "title": "Classifications",
-          "description": "Classifications for an unstructured change",
+          "description": "A list of classifications.",
           "type": [
             "array"
           ],
@@ -94,7 +94,7 @@
         },
         "date": {
           "title": "Date",
-          "description": "Date value",
+          "description": "A date.",
           "type": [
             "string",
             "null"
