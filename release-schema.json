@@ -9,6 +9,7 @@
           "items": {
             "$ref": "#/definitions/UnstructuredChange"
           },
+          "uniqueItems": true,
           "wholeListMerge": true
         }
       }
