@@ -64,7 +64,7 @@
     },
     "UnstructuredChangeValue": {
       "title": "Unstructured change value",
-      "description": "Old or new unstructured change value.",
+      "description": "A value of a data element. The value must be described using only one of the fields `text`, `classifications` or `date`.",
       "type": "object",
       "properties": {
         "text": {
