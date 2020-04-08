@@ -6,7 +6,7 @@
     "en": "Adds an unstructuredChanges array to the Amendment object."
   },
   "documentationUrl": {
-    "en": "https://github.com/open-contracting-extensions/ocds_unstructuredChanges_extension"
+    "en": "https://extensions.open-contracting.org/en/extensions/unstructuredChanges/"
   },
   "compatibility": [
     "1.1"
