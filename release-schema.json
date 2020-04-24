@@ -10,7 +10,8 @@
             "$ref": "#/definitions/UnstructuredChange"
           },
           "uniqueItems": true,
-          "wholeListMerge": true
+          "wholeListMerge": true,
+          "minItems": 1
         }
       }
     },
@@ -25,7 +26,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "oldValue": {
           "title": "Old value",
@@ -48,7 +50,8 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             },
             "label": {
               "title": "Label",
@@ -56,11 +59,14 @@
               "type": [
                 "string",
                 "null"
-              ]
+              ],
+              "minLength": 1
             }
-          }
+          },
+          "minProperties": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "UnstructuredChangeValue": {
       "title": "Unstructured change value",
@@ -73,7 +79,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "classifications": {
           "title": "Classifications",
@@ -85,7 +92,8 @@
             "$ref": "#/definitions/Classification"
           },
           "wholeListMerge": true,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "date": {
           "title": "Date",
@@ -96,7 +104,8 @@
           ],
           "format": "date-time"
         }
-      }
+      },
+      "minProperties": 1
     }
   }
 }
