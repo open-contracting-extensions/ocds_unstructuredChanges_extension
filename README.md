@@ -29,6 +29,18 @@ See [OCDS for the European Union](http://standard.open-contracting.org/profiles/
           },
           {
             "oldValue": {
+              "date": "2020-12-15"
+            },
+            "newValue": {
+              "date": "2019-12-15T14:00:00+03:00"
+            },
+            "where": {
+              "section": "I.4",
+              "label": "Notice date"
+            }
+          },
+          {
+            "oldValue": {
               "classifications": [
                 {
                   "scheme": "CPV",
@@ -62,6 +74,10 @@ See [OCDS for the European Union](http://standard.open-contracting.org/profiles/
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### 2020-07-13
+
+* Relax date format to allow either date or datetime
 
 ### 2020-06-04
 
