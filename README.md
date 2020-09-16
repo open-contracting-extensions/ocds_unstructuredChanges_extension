@@ -8,18 +8,18 @@ In many procurement regimes, it is common to amend a procurement notice by descr
 
 On the other hand, it is easy for a machine to calculate the difference between two full notices, but difficult or impossible to interpret a description of changes. There are many ways in which a change description can go wrong, which a human can recover from, but which a machine cannot. For example:
 
-- the label of the field that is subject to modification can refer to
-  - non-existent sections or labels
-  - existent but incorrect labels
-- the type of the new value can be inconsistent with the type of the field
+* The label of the field that is subject to modification can refer to:
+  * a label that doesn't occur on the earlier notice
+  * an incorrect or imprecise label on the earlier notice
+* The data type of the new value can be inconsistent with the data type of the field.
 
 OCDS is designed to be read by machines. Ideally, the source system from which OCDS data is exported contains the values of each field before and after a change. In that case, you should simply follow [the releases and records model](https://standard.open-contracting.org/latest/en/schema/reference/#release-handling).
 
-This extension is intended to be used only in cases where a source system doesn't track the values of fields, but instead tracks a description of changes, like in the EU (see Legal context). However, the lack of structure will not allow you to do so much data analysis.
+This extension is intended to be used only in cases where a source system doesn't track the values of fields, but instead tracks a description of changes, like in the EU (see *Legal context* below). Note: The lack of structure prevents much data analysis.
 
 ## Legal context
 
-We developed this extension primarily to enable the mapping TED form F14 XML to OCDS, but it can also be useful in non-EU contexts.
+This extension was developed primarily to enable the mapping of the European Union's standard forms for public procurement to OCDS (specifically Form 14 Corrigendum), but it might be useful in non-EU contexts.
 
 See [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/master/en/F14) for guidance on how to use it with TED F14 data.
 
@@ -94,7 +94,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### 2020-09-16
 
-* Add guidance highlighting the difference between structured and unstructured changes
+* Add Guidance section
 
 ### 2020-07-13
 
