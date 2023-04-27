@@ -85,9 +85,7 @@
         "classifications": {
           "title": "Classifications",
           "description": "A list of classifications.",
-          "type": [
-            "array"
-          ],
+          "type": "array",
           "items": {
             "$ref": "#/definitions/Classification"
           },
