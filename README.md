@@ -21,7 +21,7 @@ This extension is intended to be used only in cases where a source system doesn'
 
 This extension was developed primarily to enable the mapping of the European Union's standard forms for public procurement to OCDS (specifically Form 14 Corrigendum), but it might be useful in non-EU contexts.
 
-See [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/latest/en/F14) for guidance on how to use it with TED F14 data.
+See [OCDS for the European Union](https://standard.open-contracting.org/profiles/eu/latest/en/F14) for guidance on how to use it with TED F14 data.
 
 ## Example
 
